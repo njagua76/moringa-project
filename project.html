@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Garbage Collection System</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1 id ="myTitle">Garba Track</h1>
+     <nav>
+      <button id="loginBtn">Login</button>
+      <button id="registerBtn">Register</button>
+    </nav>
+    </header>
+     <main>
+    <section id="request-form">
+      <h2>Request Garbage Pickup</h2>
+      <form id="pickupForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" required />
+
+        <label for="urgency">Urgency Level:</label>
+        <select id="urgency">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <!-- creates a dropdown menu-->
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+
+    <section id="pickup-schedule">
+      <h2>Upcoming Pickups</h2>
+      <ul id="scheduleList">
+        <!-- Pickup entries will be added here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SmartWaste</p>
+  </footer>
+
+
+
+    <script src="project.js"></script>
+</body>
+</html>
